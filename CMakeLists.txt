@@ -1,0 +1,8 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+PROJECT(gen_class)
+
+IF(UNIX)
+	SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall -Wextra")
+ENDIF()
+
+ADD_EXECUTABLE(gen_class gen_class.cpp)
